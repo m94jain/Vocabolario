@@ -1,0 +1,272 @@
+@font-face { 
+  font-family: Droid Sans; 
+    src: url('../fonts/DroidSans-webfont.eot'); 
+    src: local("Droid Sans"), url('../fonts/DroidSans-webfont.woff'); 
+} 
+
+@font-face { 
+  font-family: Jenna Sue; 
+    src: url('../fonts/JennaSue-webfont.eot'); 
+    src: local("Jenna Sue"), url('../fonts/JennaSue-webfont.ttf'); 
+} 
+
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+@font-face { 
+font-family: Brandon Grotesque Bold; 
+src: url('brandon_grotesque_bold.eot'); 
+src: url('brandon_grotesque_bold.eot?#iefix')
+ format('embedded-opentype'), 
+ url('brandon_grotesque_bold.svg#Brandon Grotesque Bold') 
+ format('svg'), url('brandon_grotesque_bold.woff') format('woff'),
+ url('brandon_grotesque_bold.ttf') format('truetype');
+ font-weight: normal; font-style: normal;
+ }
+
+/* tell the browser to render HTML 5 elements as block */
+/*article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}*/
+
+body { /*page text style*/
+
+  font: normal .85em 'Droid Sans', arial, sans-serif;
+/*background: url(../images/skulls.png);*/
+background-color:white;
+ 
+}
+
+p { /*proper text spacing*/
+  padding: 0 0 20px 0;
+  margin-left: 40px;
+  color: #252525;
+  line-height: 1.5em;
+}
+
+h1 { /*heading*/
+  font: normal 400% 'Jenna Sue', arial, sans-serif;
+  color: #;
+  margin: 0 0 0px 0;
+  padding: 20px 0 5px 0;
+}
+
+
+
+
+#logo { /*vocabolario space*/
+  /*width: 220px;*/
+  /*height: 65px;*/
+  margin-left: 20px;
+    padding-top : 20px;
+    padding-left:45px; 
+    text-align:left;  
+  background: transparent;
+  
+}
+.hidden {
+      display: none;
+}
+
+#logo h1 { /*vocabolario*/
+  font: normal 400% 'Jenna Sue', arial, sans-serif;
+  padding: 0 0 0 17px;
+  color: #ffffff;
+}
+
+
+nav { /*navigation*/
+  
+  /*height: 40px;
+  width: 500px;*/
+  margin-top: 25px;
+  margin-left: 70px;
+  float: left;
+  position: relative;
+  
+  
+  } 
+
+    
+.site_content { /*white background*/
+  margin: 5px auto 0 auto;
+  width: 940px;
+  height: 500px;
+ padding:20px;
+ float:left;
+  
+  } 
+
+
+/* form styling */
+
+
+.lavaLampWithImage li { /*nav spacing*/
+  float: left;
+  list-style: none;
+}
+
+
+.lavaLampWithImage li a { /*nav style*/
+  font: 109% 'Droid Sans', arial, sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  outline: none;
+  /*padding: 6px 9px 0 9px;*/
+  margin: auto 10px;    
+}
+
+.lavaLampWithImage li a:hover{ /*nav link*/
+  color: #FFF;
+} 
+
+.welcome
+{
+	margin-left:50px;
+	color:white;
+  font: normal 250% 'Jenna Sue', arial, sans-serif;
+   overflow: hidden;
+	
+}
+
+.userbox
+{
+	background-color:#282D30;
+	 font: 43% 'Droid Sans', arial, sans-serif;
+	border:0px;
+	color:white;
+	
+ }
+ 
+ .homebox
+ {
+	
+	overflow:hidden;
+ }
+ 
+ .howbox	/*main home page*/
+ {
+		background-color:#3cc2c2;
+		color:black;
+		height:280px;
+		width:850px;
+		padding:10px;
+		margin:20px 0 0 -10px;
+		float:left;
+		color:white;
+		font: 109% 'Jenna Sues', arial, sans-serif;
+		border-radius: 25px;
+		overflow:hidden;
+ }
+ 
+ 
+ .buttonstyl	/* start box*/
+ {
+	background:-webkit-linear-gradient(#DE147C,#B51869);
+	border: 1px solid #ccc;
+	color:white;
+	font-family: "Trebuchet MS", "Myriad Pro", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 8px 0 9px;
+	text-align: center;
+	width: 150px;
+	cursor:pointer;
+	height:60px;
+	margin:20px 220px;
+	text-shadow: 0px 1px 0px #fff;
+	
+	-webkit-border-radius: 4px;
+	
+	border-radius: 4px;
+
+	box-shadow: 0px 0px 2px #fff inset;
+}
+.buttonstyl:hover {
+	background: #d9d9d9;
+	-moz-box-shadow: 0px 0px 2px #eaeaea inset;
+	-webkit-box-shadow: 0px 0px 2px #eaeaea inset;
+	box-shadow: 0px 0px 2px #eaeaea inset;
+	color: #222;
+}
+
+.wordday	/* word of the day box*/
+{
+float:right;
+background:white;
+margin-top: -40px;
+margin-right:55px;
+width:300px;
+height:280px;
+border:2px solid black;
+overflow:hidden;
+border-radius:4px;
+}
+
+.innerwordday
+{
+	background:#1F665C;
+	height:900px0px;
+	
+	text-align:center;
+	
+	color:white;
+}
+
+.word
+{
+	font-size :140%;
+	text-align:center;
+	
+}
+.meaning
+{
+	font-size:100%;
+	margin:10px ;
+	height:90px;
+}
+
+.dict
+{
+	float:right;
+background:white;
+margin:20px 55px 28px 40px;
+width:300px;
+height:235px;
+border:2px solid black;
+overflow:hidden;
+border-radius:4px;
+}
+
+.dictinner
+{
+background:#21C704 ; 
+color:white ; 
+text-align:center;
+height:40px;
+
+}
+
+input[type="submit"] 
+{
+	background: #e3e3e3;
+	border: 1px solid #ccc;
+	color: #333;
+	
+	font-size: 10px;
+	font-weight: bold;
+	padding: 8px 0 9px;
+	text-align: center;
+	width: 80px;
+	cursor:pointer;
+	
+	text-shadow: 0px 1px 0px #fff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 0px 2px #fff inset;
+	-webkit-box-shadow: 0px 0px 2px #fff inset;
+	box-shadow: 0px 0px 2px #fff inset;
+}

@@ -1,0 +1,59 @@
+.ch-grid li {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin-left: 50px;
+}
+.ch-grid-flash li {
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+	margin-left: 50px;
+}
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 16px rgba(255,254,254,1),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 { 
+	background-image: url(../images/daily.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fffefe;
+}
+
+.ch-img-2 { 
+	background-image: url(../images/word.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fffefe;
+}
+
+
+
+
+.ch-info {
+	position: absolute;
+	background: rgba(37,37,37, 0.8);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	-webkit-backface-visibility: hidden;
+
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+	background-color: #ed7625;
+}

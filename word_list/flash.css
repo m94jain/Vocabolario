@@ -1,0 +1,68 @@
+#f1_container {
+  position: relative;
+  margin: 10px 0px 0px 00px;
+  width: 400px;
+  height: 500px;
+  z-index: 1;
+  border-width: 1px;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+
+
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+ /* box-shadow: -5px 5px 5px #aaa;*/
+   
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+    border-color: #000000;
+  border-width: 1px;
+  border-style:solid;
+  
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  
+
+
+}
+
+#change1
+{
+  background:  url(../images/Paper-Background-13.jpg);
+}
+
+#change2
+{
+  background: url(../images/Paper-Background-13.jpg);
+}
+select {
+    padding:3px;
+	width:100px;
+    margin:0px 5px;
+    border-radius:4px;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    cursor:pointer;
+}

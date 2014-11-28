@@ -1,0 +1,371 @@
+<html>
+<?php
+ include('C:\xampp\htdocs\new look latest-2\randomword.php');
+getdata();
+?>
+<head>
+  <title>
+    Vocabolario
+  </title>
+<!--
+  <style>
+    div 
+    {
+      border: 2px solid;
+      border-radius: 0px;
+    }-->
+  </style>
+<link rel="stylesheet" type="text/css" href="css/learnmore.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400, 700' rel='stylesheet' type='text/css'> 
+  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <!-- style sheet for login -->
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+ 
+
+
+<header>
+  <div class="upper" style="width:105%;  float:left; background-color:#282D30;overflow:hidden; margin: -.5% -.6% 0px -.5%;">
+    <div id="logo" style="width:25%; height:65px; float:left;">
+      <h1>Vocabolario</h1>
+    </div>
+    <div style="width:65%; height:70px; float:right;"> 
+	    <div style="width:40%; height:70px; float:left;">
+       
+      </div>
+      <div style="margin-top:20px; width:55%; height:70px; float:left; vertical-align:bottom; "> 
+	     <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current" id="link"><a id="home" href="javascript:void(0)">Home</a></li>
+          <li><a  id="pref" href="javascript:void(0);" >How It Works</a></li>
+          
+          <li><a id="sign-in" href="javascript:void(0);">Sign in</a></li>
+          
+        </ul>
+        </nav> 
+      </div>
+    </div>
+  </div>
+<!--<div id ="line" style="clear:both;">
+   <hr style="color: #ffffff; background: #ffffff; width: 100%; height: 1px; border: 0; ">
+</div>-->
+</header>
+
+<div class="lower" style="width:100%; float:left">
+  <div style="width:10%; height:300px;float:left;"> 
+   <!--div part1 the white space before blue box.. on its left-->
+		
+	 </div>
+	<!--the white dabba for home starts here-->
+	<div id="home_content" class="homebox" style="float:left">
+	<div class="howbox">
+	<img src="images/how.png"> </img>
+	<img style="float:right" src="images/anim.gif"> </img>
+	<br><br><br><br>PLAY VOCAB DYNAMO CHALLENGE AND TEST YOUR VOCABOLARY 
+	
+	<button class="buttonstyl">Start Now</button>
+	</div>
+	</div>
+	
+	
+	       <!--the white dabba for pref starts here-->
+
+    <div id="pref_content" class="hidden site_content" style="background:#7AC9ED">
+      
+       
+      <div id="content">
+        <h1>h1 headings-PERFORMANCE</h1>
+       
+        <h2>h2 headings</h2>
+        <p>list settings</p>
+        <ul>
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+          <li>four</li>
+        </ul>
+      </div>
+	  
+    </div>
+		
+
+
+	<div id="sign_content" class="hidden wrapper" style="background: url(../images/skulls.png);" >
+    
+		<!--class wrapper includes all the forms -->
+			
+			<div class="content">
+				<div id="form_wrapper" class="form_wrapper">
+					<form name="form" class="register" method="post" action="insertsql.php" "onsubmit="return check()">
+						<h3>Register</h3>
+						<div class="column">
+							<div>
+								<label>First Name:</label>
+								<p class="fault"  >*      </p> 
+								<input type="text" name="Fname"/>
+								<span class="error">This is an error</span>
+							</div>
+							<div>
+								<label>Password</label>
+								<p class="fault"  >*      </p> 
+								<input type="text" name="pass1"/>
+								<span class="error">This is an error</span>
+							</div>
+						<div>
+								<label>Email:</label>
+								<p class="fault"  >*      </p> 
+								<input type="text" name="Email"/>
+								<span class="error">This is an error</span>
+							</div>
+							
+						</div>
+						<div class="column">
+							<div>
+								<label>Last Name:</label>
+								<p class="fault"  >*      </p> 
+								<input type="text" name="Lname"/>
+								<span class="error">This is an error</span>
+							</div>
+							<div>
+								<label>Confirm Password:</label>
+								<p class="fault"  >*      </p> 
+								<input type="password" name="pass2" />
+								<span class="error">This is an error</span>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="remember">
+								<input type="checkbox" />
+								<span>Send me updates</span>
+							</div>
+							<input type="submit" value="Register" />
+							<a href="index.html" rel="login" class="linkform">You have an account already? Log in here</a>
+							<div class="clear"></div>
+						</div>
+					</form>
+					<form name="form" class="login active" method="POST" action="connectivity.php" method="POST" onsubmit="return check()">
+						<h3>Login</h3>
+						<div>
+							<label>Username:</label>
+							<p class="fault" id="usererror" >*      </p>
+							<input type="text" name="user"/>
+							<span class="error">This is an error</span>
+						</div>
+						<div>
+							<label>Password: <a href="forgot_password.html" rel="forgot_password" class="forgot linkform">Forgot your password?</a></label>
+							<p class="fault" id="passerror" > *</p>
+							<input type="password" name="pass"/>
+							<span class="error">This is an error</span>
+						</div>
+						<div class="bottom">
+							<div class="remember"><input type="checkbox" /><span>Keep me logged in</span></div>
+							<input type="submit" name="submit" value="Login"></input>
+							<a href="register.html" rel="register" class="linkform">You don't have an account yet? Register here</a>
+							<div class="clear"></div>
+						</div>
+						<p align="right" id="blankpara" class="blank"></p>
+
+					</form>
+					<form class="forgot_password" action="mail.php">
+						<h3>Forgot Password</h3>
+						<div>
+							<label>Username or Email:</label>
+							<input type="text" />
+							<span class="error">This is an error</span>
+						</div>
+						<div class="bottom">
+							<input type="submit" value="Send reminder"></input>
+							<a href="index.html" rel="login" class="linkform">Suddenly remebered? Log in here</a>
+							<a href="register.html" rel="register" class="linkform">You don't have an account? Register here</a>
+							<div class="clear"></div>
+						</div>
+					</form>
+				</div>
+				<div class="clear"></div>
+		</div>
+		
+    </div>
+	<!--the word of the day dabba starts here -->
+	<div id="wordday" class="wordday">
+	WORD OF THE DAY<br>
+	<b><?php echo $word;?> </b>
+	</div>
+	<div>
+	    <ul class="ca-menu">
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">L</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Learn More</h2>
+                                <h3 class="ca-sub">Learn More About Our Site</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon">F</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Facts</h2>
+                                <h3 class="ca-sub">Some Basic Facts </h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="ca-icon" >G</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Games</h2>
+                                <h3 class="ca-sub">Games For Fun</h3>
+                            </div>
+                        </a>
+                    </li>
+                  
+                   
+                </ul>
+            </div><!-- content -->
+
+  
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>	
+	<script>//java src to include jquery library
+	$("#pref").click	//pref is the id of preference..an anchor <a> on the top next to home 
+	(
+			function()	//this function will run when we click on preference
+			{
+					
+				
+					$("#home_content").hide("slow");
+					$("#pref_content").show("slow");
+					$("#sign_content").hide("slow");
+				
+			}
+			
+	);
+	
+	$("#home").click	//pref is the id of preference..an anchor <a> on the top next to home 
+	(
+			function()	//this function will run when we click on preference
+			{
+			//	if( $('#pref_content').length ) 	//to check whether the element exist...case where performance ka content is already loaded and user again clicks on performance anchor
+				{
+			//	$("#pref_content").replaceWith($("#home_content"));	//content inside site_content will be replaced 
+					$("#pref_content").hide("slow");
+					$("#home_content").show("slow");
+				$("#card_content").hide("slow");
+					$("#sign_content").hide("slow");
+				}
+			}
+			
+	);
+
+	
+			$("#sign-in").click	//pref is the id of preference..an anchor <a> on the top next to home 
+	(
+			function()	//this function will run when we click on preference
+			{
+			//	if( $('#pref_content').length ) 	//to check whether the element exist...case where performance ka content is already loaded and user again clicks on performance anchor
+				{
+			//	$("#pref_content").replaceWith($("#home_content"));	//content inside site_content will be replaced 
+					$("#pref_content").hide("slow");
+					$("#home_content").hide("slow");
+				$("#card_content").hide("slow");
+					$("#sign_content").show("slow");
+				}
+			}
+			
+	);
+
+	</script>
+
+	<!-- Javascript for log in box starts here-->
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {		//will run every time page is loaded
+					//the form wrapper (includes all forms)
+				var $form_wrapper	= $('#form_wrapper'),
+					//the current form is the one with class active
+					$currentForm	= $form_wrapper.children('form.active'),
+					//the change form links
+					$linkform		= $form_wrapper.find('.linkform');
+						
+				//get width and height of each form and store them for later						
+				$form_wrapper.children('form').each(function(i)
+				{
+					var $theForm	= $(this);
+					//solve the inline display none problem when using fadeIn fadeOut
+					if(!$theForm.hasClass('active'))
+						$theForm.hide();
+					$theForm.data({
+						width	: $theForm.width(),
+						height	: $theForm.height()
+					});
+				});
+				
+				//set width and height of wrapper (same of current form)
+				setWrapperWidth();
+				
+				/*
+				clicking a link (change form event) in the form
+				makes the current form hide.
+				The wrapper animates its width and height to the 
+				width and height of the new current form.
+				After the animation, the new form is shown
+				*/
+				$linkform.bind('click',function(e){
+					var $link	= $(this);
+					var target	= $link.attr('rel');	//register
+					$currentForm.fadeOut(400,function(){
+						//remove class active from current form
+						$currentForm.removeClass('active');
+						//new current form
+						$currentForm= $form_wrapper.children('form.'+target);	//class="register" form 
+						//animate the wrapper
+						$form_wrapper.stop().animate({
+										width	: $currentForm.data('width') + 'px',
+										height	: $currentForm.data('height') + 'px'
+									 },500,function(){
+										//new form gets class active
+										$currentForm.addClass('active');
+										//show the new form
+										$currentForm.fadeIn(400);
+									 });
+					});
+					e.preventDefault();
+				});
+				
+				function setWrapperWidth(){
+					$form_wrapper.css({
+						width	: $currentForm.data('width') + 'px',
+						height	: $currentForm.data('height') + 'px'
+					});
+				}
+				
+					
+			});
+        </script>
+		
+		<!-- Javascript to check whether all fields are filled or not -->
+			<script>	
+	function check()
+	{
+ var x = document.forms["form"]["user"].value;
+  var y = document.forms["form"]["pass"].value;
+  
+	if(x=="" || x==null || y=="" || y==null)
+	{
+		var a=document.getElementById("blankpara");
+		a.innerHTML="FILL ALL THE FIELDS";
+		return false;
+	}
+	var a=document.getElementById("blankpara");
+		a.innerHTML="";
+		return true;
+ }
+		</script>
+		
+</html>
+

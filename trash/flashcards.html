@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Vocabolario</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  
+     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <!-- modernizr enables HTML5 elements and feature detects -->
+ <style type="text/css"> 
+ 
+#cover{ 
+position:fixed; 
+top:0; 
+left:0; 
+background:rgba(0,0,0,0.9); 
+z-index:5; 
+width:100%; 
+height:100%; 
+display:none; 
+} 
+#loginScreen { 
+height:475px; 
+width:400px; 
+margin:auto auto 200px auto; 
+position:relative; 
+z-index:10; 
+display:none; 
+background-image: url("images (1).jpg"); 
+border:7px solid #d2691f; 
+} 
+#loginScreen:target, #loginScreen:target + #cover{ 
+display:block; opacity:2; 
+}
+p.style{
+  color: #000;
+  text-align: justify;
+  text-decoration: none;
+} 
+</style> 
+<style>
+
+
+table, th{
+  padding: 40px;
+}
+table, td{
+  padding: 60px;
+}
+</style>
+
+</head>
+
+
+<body background="C:\Users\Manvi Jain\Downloads\background-imager">
+ <div id="main">
+    <header>
+      <div id="logo"><h1>Vocabolario</h1></div>
+      <!--navigation bar-->
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="performance.html">Performance</a></li>
+          <li><a href="review.html">Flashcards Review</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          
+        </ul>
+      </nav>
+      <div id ="line">
+   <hr style="color: #d2691f; background: #d2691f; width: 100%; height: 1px; border: 0;">
+     </div>
+    </header>
+    <!--the white dabba starts here-->
+<div id="site_content">
+  <div align="center"> 
+<a href="#loginScreen" ></a> </div> 
+<div id="loginScreen"> 
+<a><p>i am a word</p></a>
+<a href="#"></a> 
+</div> 
+<div id="cover" > 
+</div> 
+</div>
+</html>
